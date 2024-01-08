@@ -1,0 +1,88 @@
+body {
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 50%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.disclaimer {
+    font-size: 20px;
+    margin-top: 100px;
+}
+
+.disclaimer span {
+    color: red;
+}
+  
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  .icon-button i {
+    color: white;
+    font-size: 32px;
+    transition: color 0.3s ease;
+  }
+  
+  .icon-button img {
+    width: 32px;
+    height: auto;
+    filter: invert(1) grayscale(1) brightness(1);
+    transition: filter 0.3s ease;
+  }
+  
+  .icon-button:hover i,
+  .icon-button:hover img {
+    color: #008000;
+    filter: none;
+  }
+
+  .stone-pepe {
+    position: fixed;
+    bottom: 0;
+    left: 50px;
+    width: 420px; /* adjust as needed */
+    display: none;
+  }
+
+  .ca {
+    position: fixed;
+    top: 10px;
+    left: 30px;
+    font-size: 20px;
+  }
+  
+  @media screen and (min-width: 768px) { /* adjust breakpoint as needed */
+    .stone-pepe {
+      display: block;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+
+    .ca {
+      font-size: 16px;
+    }
+}
